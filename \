@@ -11,6 +11,7 @@ class UsersManagersTests(TestCase):
                 email="testuser@example.com",
                 password="testpass1234",
                 )
+        )
         self.assertEqual(user.username, "testuser")
         self.assertEqual(user.email, "testuser@example.com")
         self.assertTrue(user.is_active)
